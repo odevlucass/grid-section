@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: hsl(0, 0%, 81%);
+    --person-name-dark:hsl(0, 0%, 100%);
+    --person-name-white:hsl(219, 29%, 14%);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0;
+    background: var(--background);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 375px;
+}
+
+.card {
+    display: block;
+    margin: auto;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.metadata {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+img {
+    border-radius: 100%;
+}
+
+h1 {
+    color: var(--person-name-dark);
+}
+
+strong {
+    color: hsl(217, 19%, 35%);
+}
